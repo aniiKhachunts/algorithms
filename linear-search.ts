@@ -1,7 +1,7 @@
-const array = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11];
-let count = 0;
+const array: number[] = [1, 4, 5, 8, 5, 1, 2, 7, 5, 2, 11];
+let count: number = 0;
 
-function linearSearch(array, item) {
+function linearSearch(array: number[], item: number) {
     for (let i = 0; i < array.length; i++) {
         count += 1;
         if (array[i] === item) {
