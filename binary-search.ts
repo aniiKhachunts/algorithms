@@ -7,17 +7,19 @@ function binarySearch(arr: number[], item: number) {
     let middle: number;
     let found: boolean = false;
     let position: number = -1;
+    let count: number = 0;
     
-    while (found == false && start <= end) {
+    while (found === false && start <= end) {
+        count += 1
         middle = Math.floor((start + end) / 2);
         if (arr[middle] === item) {
-            found = true;
             found = true;
             position = middle;
             return position;
         }
         if (item < arr[middle]) {
             end = middle - 1;
+
         }
         else {
             start = middle + 1;
